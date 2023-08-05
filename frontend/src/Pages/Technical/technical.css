@@ -1,0 +1,158 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    /* color: white; */
+}
+.Event-Temp-Cont{
+background-color:rgb(21, 20, 20);
+display: flex;
+justify-content:space-around;
+align-items: flex-start;
+flex-direction: column;
+padding: 10px;
+color: white;
+
+}
+.titleofeventtype{
+    align-self: center;
+    color: black;
+    font-size: 30px;
+    text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px #0fa,
+      0 0 82px #0fa,
+      0 0 92px #0fa,
+      0 0 102px #0fa,
+      0 0 151px #0fa;
+    z-index: 2;
+}
+.box-events{ background-color:rgb(88, 88, 88); width: fit-content; display: flex; justify-content: center; align-items: flex-start; flex-direction: column; margin: 20px; border-radius:10px ; -webkit-border-radius:10px ; -moz-border-radius:10px ; -ms-border-radius:10px ; -o-border-radius:10px ;
+    box-shadow:
+      0 0 4px #fff,
+      0 0 5px #fff,
+      0 0 20px #fff,
+      0 0 20px #0fa,
+      0 0 20px #0fa,
+      0 0 20px #0fa,
+      0 0 20px #0fa,
+      0 0 16px #0fa;
+      margin-inline: 30px;
+}
+.event-image{
+    margin: 10px;
+    width:400px;
+    height: 400px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.all-events{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: fit-content;
+    align-items: center;
+    justify-content:center;
+    gap: 0;
+    
+}
+.view-cont-more{
+    align-self:center;
+    position: relative;
+    top: -20px;
+    margin: 20px;
+
+}
+.view-more-button{
+    align-self:center;
+    color: black;
+    border-radius:10px ;
+    box-shadow: rgb(188, 19, 254) 2px 0px 0px, rgb(188, 19, 254) -2px 0px 0px, rgb(188, 19, 254) 0px 2px 0px, rgb(188, 19, 254) 0px -2px 0px, rgb(188, 19, 254) 1px 1px, rgb(188, 19, 254) -1px -1px 0px, rgb(188, 19, 254) 1px -1px 0px, rgb(188, 19, 254) -1px 1px 0px, rgb(188, 19, 254) 0px 0px 7px, rgb(188, 19, 254) 0px 0px 10px, rgb(188, 19, 254) 0px 0px 21px;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px rgb(238, 250, 58), 0 0 20px rgb(238, 250, 58), 0 0 25px rgb(238, 250, 58), 0 0 30px rgb(238, 250, 58), 0 0 35px rgb(238, 250, 58);
+    box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px rgb(238, 250, 58), 0 0 20px rgb(238, 250, 58), 0 0 25px rgb(238, 250, 58), 0 0 30px rgb(238, 250, 58), 0 0 35px rgb(238, 250, 58);
+    padding: 10px;
+    font-size:100%;
+    border: none;
+    -webkit-border-radius:10px ;
+    -moz-border-radius:10px ;
+    -ms-border-radius:10px ;
+    -o-border-radius:10px ;
+}
+.tags{
+    /* background-color: black; */
+    text-shadow: rgb(254, 65, 100) 0px 0px 5px, rgb(254, 65, 100) 0px 0px 5px, rgb(254, 65, 100) 0px 0px 15px;
+    
+    color: rgb(0, 0, 0);
+    font-size: 3rem;
+}
+.tagname{
+    font-size: 3rem;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px rgb(238, 250, 58), 0 0 20px rgb(238, 250, 58), 0 0 25px rgb(238, 250, 58), 0 0 30px rgb(238, 250, 58), 0 0 35px rgb(238, 250, 58);
+    text-shadow: rgb(188, 19, 254) 2px 0px 0px, rgb(188, 19, 254) -2px 0px 0px, rgb(188, 19, 254) 0px 2px 0px, rgb(188, 19, 254) 0px -2px 0px, rgb(188, 19, 254) 1px 1px, rgb(188, 19, 254) -1px -1px 0px, rgb(188, 19, 254) 1px -1px 0px, rgb(188, 19, 254) -1px 1px 0px, rgb(188, 19, 254) 0px 0px 7px, rgb(188, 19, 254) 0px 0px 10px, rgb(188, 19, 254) 0px 0px 21px;
+    color: black;
+
+}
+.closetag{
+    margin: 10px;
+    font-size: 40px;
+}
+@media screen and (max-width:1024px) {
+    .event-image{
+        margin: 10px;
+        width: 300px;
+    }
+    .view-cont-more{
+        align-self:center;
+        position: relative;
+        top: -20px;
+        margin: 20px;
+    }
+    .view-more-button{
+        align-self:center;
+        color: black;
+        border-radius:10px ;
+        box-shadow: rgb(188, 19, 254) 2px 0px 0px, rgb(188, 19, 254) -2px 0px 0px, rgb(188, 19, 254) 0px 2px 0px, rgb(188, 19, 254) 0px -2px 0px, rgb(188, 19, 254) 1px 1px, rgb(188, 19, 254) -1px -1px 0px, rgb(188, 19, 254) 1px -1px 0px, rgb(188, 19, 254) -1px 1px 0px, rgb(188, 19, 254) 0px 0px 7px, rgb(188, 19, 254) 0px 0px 10px, rgb(188, 19, 254) 0px 0px 21px;
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px rgb(238, 250, 58), 0 0 20px rgb(238, 250, 58), 0 0 25px rgb(238, 250, 58), 0 0 30px rgb(238, 250, 58), 0 0 35px rgb(238, 250, 58);
+        box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px rgb(238, 250, 58), 0 0 20px rgb(238, 250, 58), 0 0 25px rgb(238, 250, 58), 0 0 30px rgb(238, 250, 58), 0 0 35px rgb(238, 250, 58);
+        padding: 10px;
+        font-size:100%;
+        border: none;
+        -webkit-border-radius:10px ;
+        -moz-border-radius:10px ;
+        -ms-border-radius:10px ;
+        -o-border-radius:10px ;
+        margin: 20px;
+    
+        
+    }
+    .titleofeventtype{
+        align-self: center;
+        color: black;
+        font-size: 15px;
+        text-shadow: rgb(188, 19, 254) 2px 0px 0px, rgb(188, 19, 254) -2px 0px 0px, rgb(188, 19, 254) 0px 2px 0px, rgb(188, 19, 254) 0px -2px 0px, rgb(188, 19, 254) 1px 1px, rgb(188, 19, 254) -1px -1px 0px, rgb(188, 19, 254) 1px -1px 0px, rgb(188, 19, 254) -1px 1px 0px, rgb(188, 19, 254) 0px 0px 7px, rgb(188, 19, 254) 0px 0px 10px, rgb(188, 19, 254) 0px 0px 21px;
+        z-index: 2;
+    }
+    .tags{
+        /* background-color: black; */
+        text-shadow: rgb(254, 65, 100) 0px 0px 5px, rgb(254, 65, 100) 0px 0px 5px, rgb(254, 65, 100) 0px 0px 15px;
+        
+        color: rgb(0, 0, 0);
+        font-size: 2rem;
+    }
+    .tagname{
+        font-size: 2rem;
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px rgb(238, 250, 58), 0 0 20px rgb(238, 250, 58), 0 0 25px rgb(238, 250, 58), 0 0 30px rgb(238, 250, 58), 0 0 35px rgb(238, 250, 58);
+        text-shadow: rgb(188, 19, 254) 2px 0px 0px, rgb(188, 19, 254) -2px 0px 0px, rgb(188, 19, 254) 0px 2px 0px, rgb(188, 19, 254) 0px -2px 0px, rgb(188, 19, 254) 1px 1px, rgb(188, 19, 254) -1px -1px 0px, rgb(188, 19, 254) 1px -1px 0px, rgb(188, 19, 254) -1px 1px 0px, rgb(188, 19, 254) 0px 0px 7px, rgb(188, 19, 254) 0px 0px 10px, rgb(188, 19, 254) 0px 0px 21px;
+        color: black;
+    
+    }
+    .closetag{
+        margin: 10px;
+        font-size: 20px;
+    }
+}
