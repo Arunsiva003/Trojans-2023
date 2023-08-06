@@ -1,0 +1,80 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.events_home{
+background-color:#1E1E1E;
+display: flex;
+height: 100vh;
+justify-content: space-around;
+align-items: center;
+}
+
+.left_tech{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    gap: 50px;
+    height: fit-content;
+}
+.run_btn{
+align-self: center;
+background-color: #000000;
+color:white;
+padding:10px 30px;
+box-shadow: rgb(188, 19, 254) 0px 0px 4px, rgb(188, 19, 254) 0px 0px 11px, rgb(188, 19, 254) 0px 0px 19px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+}
+.events_heading{
+    text-shadow: rgb(188, 19, 254) 2px 0px 0px, rgb(188, 19, 254) -2px 0px 0px, rgb(188, 19, 254) 0px 2px 0px, rgb(188, 19, 254) 0px -2px 0px, rgb(188, 19, 254) 1px 1px, rgb(188, 19, 254) -1px -1px 0px, rgb(188, 19, 254) 1px -1px 0px, rgb(188, 19, 254) -1px 1px 0px, rgb(188, 19, 254) 0px 0px 7px, rgb(188, 19, 254) 0px 0px 10px, rgb(188, 19, 254) 0px 0px 21px;
+    font-size: 3rem;
+    border-bottom: 4px solid rgb(188, 19, 254);
+    font-weight: bold;
+justify-self:  flex-end;
+}
+.events_img{
+width: 90%;
+}
+@media screen and (max-width:1024px) {
+    .events_home{
+        background-color:#1E1E1E;
+        /* background-color:aqua; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items:center ;
+        overflow: scroll;
+        height: 120vh;
+        
+    }
+    .events_heading{
+            text-shadow: rgb(188, 19, 254) 2px 0px 0px, rgb(188, 19, 254) -2px 0px 0px, rgb(188, 19, 254) 0px 2px 0px, rgb(188, 19, 254) 0px -2px 0px, rgb(188, 19, 254) 1px 1px, rgb(188, 19, 254) -1px -1px 0px, rgb(188, 19, 254) 1px -1px 0px, rgb(188, 19, 254) -1px 1px 0px, rgb(188, 19, 254) 0px 0px 7px, rgb(188, 19, 254) 0px 0px 10px, rgb(188, 19, 254) 0px 0px 21px;
+            font-size: 2rem;
+            border-bottom: 4px solid rgb(188, 19, 254);
+            font-weight: bold;
+        justify-self:  flex-end;
+        }
+        .events_img{
+            width: 70%;
+        }
+        .left_tech{
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+                margin-bottom: 0px;
+                color: white;
+                width: fit-content;
+                gap: 50px;
+                height: fit-content;
+            }
+        .kela_cls{
+            position: relative;
+            top: 90px;
+            padding: 20px;
+        }
+        }
