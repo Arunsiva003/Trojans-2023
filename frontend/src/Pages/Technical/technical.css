@@ -104,7 +104,8 @@ color: white;
 @media screen and (max-width:1024px) {
     .event-image{
         margin: 10px;
-        width: 300px;
+        width: 250px;
+        height: 300px;
     }
     .view-cont-more{
         align-self:center;
