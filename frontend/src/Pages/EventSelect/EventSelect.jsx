@@ -36,7 +36,7 @@ function EventSelect() {
         </div>
       </div>
       <div className={compile ? "compiling" : "notcompile"}>
-      <div class="ring">
+      <div className="ring">
         <h1 className='compile_heading'>Compiling</h1>
         <span className='span_ani'></span>
       </div>

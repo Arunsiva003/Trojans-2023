@@ -105,13 +105,15 @@ color: white;
     .event-image{
         margin: 10px;
         width: 250px;
+        align-self: center;
         height: 300px;
     }
     .view-cont-more{
         align-self:center;
         position: relative;
         top: -20px;
-        margin: 20px;
+        margin: 10px;
+        font-size: 20px;
     }
     .view-more-button{
         align-self:center;
