@@ -1,0 +1,52 @@
+
+.ul-main {
+    padding-top:10px ;
+    display: flex;
+    list-style: none;
+    text-align: center;
+    justify-content: center;
+    align-items: center; 
+    margin: 0;
+    padding: 0;
+  }
+  
+  .ul-main li {
+    margin: 0 10px;
+    display: flex; 
+    align-items: center; 
+  }
+  
+  .ul-main a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+  }
+  
+  .ul-main a:hover {
+    background-color: #33ff00;
+    color: black;
+    border-radius: 10px;
+  }
+  
+
+  .nav-logo a {
+    display: block;
+  }
+  
+  .nav-logo .logo-img {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-image: url('../../Images/Trojans/OnlyLogo_White.webp');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .nav-logo:hover .logo-img {
+    background-color: #33ff00;
+    border-radius: 10px;
+    transform: scale(1.1);
+    transition: transform 0.5s ease-in-out;
+    background-image: url('../../Images/Trojans/OnlyLogo.webp');
+  }
+  

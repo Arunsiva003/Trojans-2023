@@ -1,4 +1,13 @@
 .home_container{
-    background-color:black;
+    /* background-color:black; */
     color: white;
+}
+
+
+.logos img{
+    width : 90%;
+    height : 500px;
+    vertical-align: center;
+    align-items: center;
+
 }
