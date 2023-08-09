@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom'; // Changed import to useNavigate
 import "./eventselect.css";
 import TechImg from '../../Images/Tech/Tech.png';
-import NonTechImg from '../../Images/Nontech/NonTech.png';
+import NonTechImg from "../../Images/NonTech/NonTech.png";
 
 function EventSelect() {
   const [compile, setCompile] = useState(false);

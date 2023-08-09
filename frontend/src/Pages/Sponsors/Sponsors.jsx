@@ -1,11 +1,21 @@
-import React from 'react'
-import "./sponsors.css"
-function Sponsors() {
-  return (
-    <div>
-      <h1>sponsors</h1>
-    </div>
-  )
+import React from "react";
+import "./sponsors.css";
+import "../Sponsors/sponsors.css";
+
+import Cards from "../Sponsors/Cards";
+
+export default function Sponsors(){
+    return(
+        <>
+        <div className = "main">
+            <div className="heading">
+                <h1 className = "h1_head">Our Sponsors</h1>
+            <div className = "cards">
+            <Cards/>    
+            </div>
+        </div>
+        </div>
+        </>
+    )
 }
 
-export default Sponsors
