@@ -4,8 +4,8 @@ import { useNavigate } from 'react-router-dom'
 function EventHome() {
   const navigation=useNavigate();
   return (
-    <div>
-      <h1>events home</h1>
+    <div  className='event_home_cont'>
+      <h1 >events home</h1>
       <button onClick={()=>{navigation("/events")}}>events page</button>
     </div>
   )

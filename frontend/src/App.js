@@ -10,7 +10,7 @@ import ContactUs from "./Pages/HomePage/ContactUs/ContactUs.jsx";
 import Workshop from "./Pages/Workshop/Workshop.jsx";
 import Navbar from "./Pages/Navbar/Navbar.jsx";
 import DetailEvent from "./Pages/DetailEvent/DetailEvent.jsx";
-import Hero from "./Components/Hero.jsx";
+import Hero from "./Pages/HomePage/Hero/Hero.jsx";
 
 function App() {
   return (
