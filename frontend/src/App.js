@@ -10,10 +10,12 @@ import ContactUs from "./Pages/HomePage/ContactUs/ContactUs.jsx";
 import Workshop from "./Pages/Workshop/Workshop.jsx";
 import Navbar from "./Pages/Navbar/Navbar.jsx";
 import DetailEvent from "./Pages/DetailEvent/DetailEvent.jsx";
+import Hero from "./Pages/HomePage/Hero/Hero.jsx";
 
 function App() {
   return (
     <Router>
+          {/* <Navbar/> */}
       <div>
         <Routes>
           <Route path="/" element={<Home />} />
@@ -24,8 +26,9 @@ function App() {
           <Route path="/nontech" element={<Nontech />} />
           <Route path="/contact" element={<ContactUs />} />
           <Route path="/workshop" element={<Workshop />} />
-          <Route path="/navbar" element={<Navbar />} />
           <Route path="/eventdetail" element={<DetailEvent />} />
+          <Route path="/hero" element={<Hero />} />
+
         </Routes>
       </div>
     </Router>

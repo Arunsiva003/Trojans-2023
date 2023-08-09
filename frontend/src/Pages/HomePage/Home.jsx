@@ -4,10 +4,10 @@ import Hero from './Hero/Hero'
 import EventHome from './EventShowing/EventHome'
 import ContactUs from './ContactUs/ContactUs'
 import Footer from './Footer/Footer'
-
+import "./homemain.css"
 function Home() {
   return (
-    <div>
+    <div className='home_container'>
       <HomeIntro/>
       <Hero/>
       <EventHome/>

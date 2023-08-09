@@ -1,33 +1,82 @@
 import React from 'react'
 import "./nontech.css"
 import p5 from "../../Images/Tech/p5.jpg"
+import { useNavigate } from 'react-router-dom';
 function Nontech() {
-    const Nontechdatas = [
-      {
-        imageSrc: p5,
-        buttonText: "View More",
-      },
-      {
-        imageSrc: p5,
-        buttonText: "View More",
-      },
-      {
-        imageSrc: p5,
-        buttonText: "View More",
-      },
-      {
-        imageSrc: p5,
-        buttonText: "View More",
-      },
-      {
-        imageSrc: p5,
-        buttonText: "View More",
-      },
-      {
-        imageSrc: p5,
-        buttonText: "View More",
-      },
-    ];
+  const navigate=useNavigate();
+  const Nontechdatas = [
+    {eventname:"event1",
+      imageSrc: p5,
+      duration:"10",
+      description:`A single team must consist of 2 members
+      •	The overall competition consists of three rounds. 
+      •	Each round is fifteen minutes long.
+      •	When the event begins, one person will begin coding while the other is absent.  After 3 minutes, the second person will pick up where the first left off.
+      •	The first round involves reverse coding. Teams will be given an input and output format and will be expected to code for it.
+      •	The second round is shortest code, where the code's efficiency is evaluated.  The efficient code will score higher marks
+      •	The fastest code is used in the third round. The teams that solve the problem the fastest will receive higher marks.
+      •	Between each round, a team will be eliminated.`,
+      coordinators:"me and u",
+      timing:"1hrs",
+      buttonText: "View More",
+    },
+    {eventname:"event1",
+      imageSrc: p5,
+      duration:"10",
+      description:`A single team must consist of 2 members
+      •	The overall competition consists of three rounds. 
+      •	Each round is fifteen minutes long.
+      •	When the event begins, one person will begin coding while the other is absent.  After 3 minutes, the second person will pick up where the first left off.
+      •	The first round involves reverse coding. Teams will be given an input and output format and will be expected to code for it.
+      •	The second round is shortest code, where the code's efficiency is evaluated.  The efficient code will score higher marks
+      •	The fastest code is used in the third round. The teams that solve the problem the fastest will receive higher marks.
+      •	Between each round, a team will be eliminated.`,
+      coordinators:"me and u",
+      timing:"1hrs",
+      buttonText: "View More",
+    },
+    {eventname:"event1",
+      imageSrc: p5,
+      duration:"10",
+      description:`A single team must consist of 2 members
+      •	The overall competition consists of three rounds. 
+      •	Each round is fifteen minutes long.
+      •	When the event begins, one person will begin coding while the other is absent.  After 3 minutes, the second person will pick up where the first left off.
+      •	The first round involves reverse coding. Teams will be given an input and output format and will be expected to code for it.
+      •	The second round is shortest code, where the code's efficiency is evaluated.  The efficient code will score higher marks
+      •	The fastest code is used in the third round. The teams that solve the problem the fastest will receive higher marks.
+      •	Between each round, a team will be eliminated.`,
+      coordinators:"me and u",
+      timing:"1hrs",
+      buttonText: "View More",
+    },
+    {eventname:"event1",
+      imageSrc: p5,
+      duration:"10",
+      description:`A single team must consist of 2 members
+      •	The overall competition consists of three rounds. 
+      •	Each round is fifteen minutes long.
+      •	When the event begins, one person will begin coding while the other is absent.  After 3 minutes, the second person will pick up where the first left off.
+      •	The first round involves reverse coding. Teams will be given an input and output format and will be expected to code for it.
+      •	The second round is shortest code, where the code's efficiency is evaluated.  The efficient code will score higher marks
+      •	The fastest code is used in the third round. The teams that solve the problem the fastest will receive higher marks.
+      •	Between each round, a team will be eliminated.`,
+      coordinators:"me and u",
+      timing:"1hrs",
+      buttonText: "View More",
+    },
+  
+   
+   
+  ];
+  const sharedata=(event)=>{
+    console.log(event)
+    navigate('/eventdetail', { state: { eventname: event.eventname,
+    duration:event.duration,
+  description:event.description,
+coordinators:event.coordinators,
+timing:event.timing } });
+  }
     return (
       <div>
          <div className='Event-Temp-Cont'>
@@ -42,7 +91,7 @@ function Nontech() {
               <h1 style={{margin:"10px"}}><span className='tags'>{"<"}</span><span className='tagname'>{" Img "}</span><span className='tags'>{">"}</span></h1>
             <img className="event-image" src={event.imageSrc} alt="Event" />
             <h2 className='closetag tags'>{"/>"}</h2>
-            <h2 className='view-cont-more'><span className='tags'>{"< "}</span> <span className='tagname'>{"a "}</span><a className='view-more-button'>{event.buttonText}</a><span className='tags'>{" />"}</span> </h2>
+            <h2 className='view-cont-more' onClick={()=>sharedata(event)}><span className='tags'>{"< "}</span> <span className='tagname'>{"a "}</span><a className='view-more-button'>{event.buttonText}</a><span className='tags'>{" />"}</span> </h2>
           </div>
         ))}
         </div>
