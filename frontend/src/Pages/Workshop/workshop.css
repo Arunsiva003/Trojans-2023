@@ -1,20 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+:root{
+    --white-color: #fff;
+    --black-color: hsl(210,12%,15%);
+    --body-color:hsl(210,24%,8%);
+    --container-color:hsl(210,24%,8%);
+
+
+    --body-font: "Poppins",sans-serif;
+
+    --h2-font-size : 1.25rem;
+    --normal-font-size: .938rem;
+}
+
+
+@media  and ( min-width : 1024px) {
+
+:root{
+    --h2-font-size: 1.5rem;
+    --normal-font-size :1rem;
+}
+    
+}
+
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
     /* color: white; */
 }
 .Workshop_cont{
-    background: #212121;
-
-/* background-color: red; */
-display: flex;
-justify-content:space-around;
-align-items: flex-start;
-flex-direction: column;
-padding: 10px;
-color: white;
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    background: var(--body-color);
 
 }
+
 .Workshop_title{
     align-self: center;
     color: #232427;
@@ -55,19 +76,7 @@ color: white;
     transform: scale(1.04) rotate(1deg);
 }
 
-/* .Work_box{
-    position: absolute;
-    top: 20px;
-    bottom: 20px;
-    left: 20px;
-    right: 20px;
-    background: #2a2b2f;
-    border: 2px solid #1e1f23;
-    border-radius:15px;
-    box-shadow: 0 20px 50px rgba(0,0,0,0.5);
 
-} */
-    
 .Work_img{
     margin: 10px;
     width:400px;
