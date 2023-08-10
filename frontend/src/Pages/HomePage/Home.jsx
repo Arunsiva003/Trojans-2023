@@ -12,12 +12,12 @@ function Home() {
     <>
     <Background/>
     <div className='home_container'>
-      <Navbar/>
-      <HomeIntro/>
+      {/* <Navbar/>
+      <HomeIntro/> */}
       <Hero/>
       <EventHome/>
-      <ContactUs/>
-      <Footer/>
+      {/* <ContactUs/> */}
+      {/* <Footer/> */}
     </div>
     </>
   )
