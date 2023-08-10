@@ -15,6 +15,7 @@ padding: 10px;
 color: white;
 
 }
+
 .titleofeventtype{
     align-self: center;
     color: black;
@@ -60,8 +61,10 @@ color: white;
     position: relative;
     top: -20px;
     margin: 20px;
+    color: white;
     
 }
+
 .view-more-button{
     align-self:center;
     color: rgb(255, 255, 255);
@@ -108,6 +111,9 @@ color: white;
         align-self: center;
         height: 300px;
     }
+    .mobile-view{
+        font-size: 30px;
+    }
     
     /* .Event-Temp-Cont{
         background-color:rgba(21, 20, 20,0.9);
@@ -134,7 +140,7 @@ color: white;
 
     .view-more-button{
         align-self:center;
-        color: black;
+        color: rgb(255, 255, 255);
         border-radius:10px ;
         /* box-shadow: rgb(188, 19, 254) 2px 0px 0px, rgb(188, 19, 254) -2px 0px 0px, rgb(188, 19, 254) 0px 2px 0px, rgb(188, 19, 254) 0px -2px 0px, rgb(188, 19, 254) 1px 1px, rgb(188, 19, 254) -1px -1px 0px, rgb(188, 19, 254) 1px -1px 0px, rgb(188, 19, 254) -1px 1px 0px, rgb(188, 19, 254) 0px 0px 7px, rgb(188, 19, 254) 0px 0px 10px, rgb(188, 19, 254) 0px 0px 21px; */
         /* text-shadow: 0 0 5px #fff, 0 0 10px #

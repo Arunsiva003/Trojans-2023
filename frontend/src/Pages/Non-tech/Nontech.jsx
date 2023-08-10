@@ -1,6 +1,6 @@
 import React from 'react'
 import "./nontech.css"
-import p5 from "../../Images/Tech/p5.jpg"
+import p5 from "../../Images/Tech/codegizza.jpeg"
 import { useNavigate } from 'react-router-dom';
 function Nontech() {
   const navigate=useNavigate();

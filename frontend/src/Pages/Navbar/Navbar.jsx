@@ -15,12 +15,12 @@ function Navbar() {
       <nav className="nav">
         <ul className="pt-5">
           <li className="nav-lst">
-            <a className="nvg-opt" href="/" data-text="Home">
+            <a  href="/" className="nvg-opt" data-text="Home">
               Home
             </a>
           </li>
           <li className="nav-lst">
-            <a className="nvg-opt" href="/events" data-text="Events">
+            <a href="/events" className="nvg-opt"  data-text="Events">
               Events
             </a>
           </li>
