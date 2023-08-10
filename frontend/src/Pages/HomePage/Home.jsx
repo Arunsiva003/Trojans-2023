@@ -10,7 +10,7 @@ import Navbar from '../Navbar/Navbar'
 function Home() {
   return (
     <>
-    <Background/>
+    {/* <Background/> */}
     <div className='home_container'>
       {/* <Navbar/>
       <HomeIntro/> */}

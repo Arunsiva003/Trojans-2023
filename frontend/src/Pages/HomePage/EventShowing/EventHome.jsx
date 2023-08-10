@@ -6,6 +6,7 @@ import dotsicon from "../../../Images/dots.png"
 import smile from "../../../Images/smile.png"
 import plus from "../../../Images/plus.png"
 import microphone from "../../../Images/microphone.png"
+import bluetick from "../../../Images/bluetick.png"
 import { Link, useNavigate } from 'react-router-dom'
 function EventHome() {
   const navigation=useNavigate();
@@ -39,7 +40,7 @@ function EventHome() {
 						<Link to="/events" className='butns'>Events</Link>
 						<Link to="/workshop" className='butns'>Workshop</Link>
 					</div>
-					<h5 className='time_wa'>now</h5>
+					<h5 className='time_wa'>now <img src={bluetick} className='bluetick'/></h5>
 				</div>
 			</div>
             <div className='whatsapp_footer'>
@@ -94,7 +95,7 @@ function EventHome() {
 						<Link to="/events" className='butns'>Events</Link>
 						<Link to="/workshop" className='butns'>Workshop</Link>
 					</div>
-					<h5 className='time_wa'>now</h5>
+					<h5 className='time_wa'>now <img src={bluetick} className='bluetick'/></h5>
 				</div>
 			</div>
             <div className='whatsapp_footer'>
