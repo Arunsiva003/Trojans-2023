@@ -206,12 +206,12 @@ label{
     padding: 10px;
 }
 
-label{
+/* label{
     border-radius: 50%;
     font-size: 30px;
     background-color: #3a26b0;
     display: inline-block;
-}
+} */
 
 .right{
     float: right;

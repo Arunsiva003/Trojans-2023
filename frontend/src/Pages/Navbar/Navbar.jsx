@@ -1,23 +1,49 @@
-import React from "react"; 
-import "../Navbar/navbar.css";
+import React from "react";
+import { Link } from "react-router-dom";
+import "./navbar.css";
 
+function Navbar() {
+  return (
+    <div className="nav_container">
+      <input
+        className="menu-icon"
+        type="checkbox"
+        id="menu-icon"
+        name="menu-icon"
+      />
+      <label className="nav-ico" htmlFor="menu-icon" />
+      <nav className="nav">
+        <ul className="pt-5">
+          <li className="nav-lst">
+            <a className="nvg-opt" href="/" data-text="Home">
+              Home
+            </a>
+          </li>
+          <li className="nav-lst">
+            <a className="nvg-opt" href="/events" data-text="Events">
+              Events
+            </a>
+          </li>
+          <li className="nav-lst">
+            <a className="nvg-opt" href="/workshop" data-text="Workshop">
+              Workshop
+            </a>
+          </li>
+          <li className="nav-lst">
+            <a className="nvg-opt" href="/sponsors" data-text="Sponsors">
+              Sponsors
+            </a>
+          </li>
 
-export default function Navbar(){
-    return(
-        <div className="nav-main">
-        <div className="nav-logo">
-        </div>
-        <ul className="ul-main">
-        <a href="/" className="nav-logo">
-            <span className="logo-img"></span>
-        </a>
-            <li><a href="/">HOME</a></li>
-            <li><a href="/">TECH</a></li>
-            <li><a href="/">NON-TECH</a></li>
-            <li><a href="/">SPONSORS</a></li>
-            <li><a href="/">CONTACT US</a></li>
-            <li><a href="/">TROJANS 2023</a></li>
-        </ul>  
-        </div>
-    )
+          <li className="nav-lst">
+            <a className="nvg-opt" href="/register" data-text="Register">
+              Register
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  );
 }
+
+export default Navbar;
