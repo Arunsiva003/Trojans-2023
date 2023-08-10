@@ -3,7 +3,7 @@ import "./Register.css"
 function Register() {
   return (
     <div>
-      
+      RegisterPage
     </div>
   )
 }

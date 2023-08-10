@@ -15,7 +15,7 @@ import Hero from "./Pages/HomePage/Hero/Hero.jsx";
 function App() {
   return (
     <Router>
-          {/* <Navbar/> */}
+          <Navbar/>
       <div>
         <Routes>
           <Route path="/" element={<Home />} />
@@ -28,6 +28,8 @@ function App() {
           <Route path="/workshop" element={<Workshop />} />
           <Route path="/eventdetail" element={<DetailEvent />} />
           <Route path="/hero" element={<Hero />} />
+          <Route path="/nav" element={<Navbar />} />
+
 
         </Routes>
       </div>
