@@ -78,23 +78,23 @@ timing:event.timing } });
     }
     return (
       <div>
-         <div className='Event-Temp-Cont'>
-        <div className='titleofeventtype'>
+         <div className='Workshop_cont'>
+        <div className='Workshop_title'>
           <h1 className='mobile-view'>{"< Workshop />"}</h1>
         </div>
-        <h1 style={{margin:"10px"}}><span className='tags'>{"<"}</span><span className='tagname'>{" div "}</span><span className='tags'>{">"}</span></h1>
-        <div className='all-events'>
+        <h1 style={{margin:"10px"}}><span className='Work_tag'>{"<"}</span><span className='Work_tag_name'>{" div "}</span><span className='Work_tag'>{">"}</span></h1>
+        <div className='all-workshop'>
         {workshopdata.map((event, index) => (
           
-            <div className='box-events' key={index}>
-              <h1 style={{margin:"10px"}}><span className='tags'>{"<"}</span><span className='tagname'>{" Img "}</span><span className='tags'>{">"}</span></h1>
-            <img className="event-image" src={event.imageSrc} alt="Event" />
-            <h2 className='closetag tags'>{"/>"}</h2>
-            <h2 className='view-cont-more' onClick={()=>{sharedata(event)}}><span className='tags'>{"< "}</span> <span className='tagname'>{"a "}</span><a className='view-more-button'>{event.buttonText}</a><span className='tags'>{" />"}</span> </h2>
+            <div className='Workshop_cards' key={index}>
+              <h1 style={{margin:"10px"}}><span className='Work_tag'>{"<"}</span><span className='Work_tag_name'>{" Img "}</span><span className='Work_tag'>{">"}</span></h1>
+            <img className="Work_img" src={event.imageSrc} alt="Event" />
+            <h2 className='Work_close Work_tag'>{"/>"}</h2>
+            <h2 className='Work_view' onClick={()=>{sharedata(event)}}><span className='Work_tag'>{"< "}</span> <span className='Work_tag_name'>{"a "}</span><a className='Work_view_btn'>{event.buttonText}</a><span className='Work_tag'>{" />"}</span> </h2>
           </div>
         ))}
         </div>
-        <h1 style={{margin:"10px"}}><span className='tags'>{"<"}</span><span className='tagname'>{" /div "}</span><span className='tags'>{">"}</span></h1>
+        <h1 style={{margin:"10px"}}><span className='Work_tag'>{"<"}</span><span className='Work_tag_name'>{" /div "}</span><span className='Work_tag'>{">"}</span></h1>
         </div>
       </div>
     )
