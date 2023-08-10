@@ -1,0 +1,10 @@
+
+.h1_head{
+    text-align: center;
+    color : white;
+    background: transparent;
+    /* z-index: 1; */
+    padding:  20px;
+    font-size: 50px;
+    margin-bottom: 20px;
+}

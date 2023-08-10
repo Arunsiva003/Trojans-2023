@@ -67,6 +67,7 @@
     height: 2px;
     background-color: #ececee;
     border-width: 0;
+    display:none;
     /* transition: border-width 100ms 340ms ease,
       top 100ms 300ms cubic-bezier(0.23, 1, 0.32, 1),
       height 100ms 300ms cubic-bezier(0.23, 1, 0.32, 1),
