@@ -4,7 +4,8 @@
     /* color: white; */
 }
 .Workshop_cont{
-background-color:rgba(21, 20, 20,0.9);
+    background: #212121;
+
 /* background-color: red; */
 display: flex;
 justify-content:space-around;
@@ -16,7 +17,7 @@ color: white;
 }
 .Workshop_title{
     align-self: center;
-    color: black;
+    color: #232427;
     font-size: 30px;
     text-shadow:
       0 0 7px #fff,
@@ -29,10 +30,44 @@ color: white;
       0 0 151px #0fa;
     z-index: 2;
 }
-.Workshop_cards{ background-color:rgba(0, 0, 0, 0.1); width: fit-content; display: flex; justify-content: center; align-items: start ; flex-direction: column; margin: 20px; border-radius:10px ; -webkit-border-radius:10px ; -moz-border-radius:10px ; -ms-border-radius:10px ; -o-border-radius:10px ;
-    box-shadow: 0 0 5px #31afaf, 0 0 15px #31afaf, 0 0 15px #31afaf, 0 0 6px #31afaf;
-      margin-inline: 30px;
-    }
+.Workshop_cards{ 
+    background-color:#000;
+    width: fit-content; 
+    display: flex; 
+    justify-content: center;
+    align-items: start ; 
+    flex-direction: column; 
+    margin: 20px; 
+    border-radius:15px ;
+    transition: all 0.2s;
+    background: rgba(255,255,255,.05);
+    box-shadow: 0 0 10px rgba(0,0,0,0.25);
+    backdrop-filter: blur(10px);
+
+    /* -webkit-border-radius:10px ;
+    -moz-border-radius:10px ; 
+    -ms-border-radius:10px ;
+    -o-border-radius:10px ; */
+    /* box-shadow: 0 0 5px #31afaf, 0 0 15px #31afaf, 0 0 15px #31afaf, 0 0 6px #31afaf; */
+    margin-inline: 30px;
+}
+.Workshop_cards:hover{
+    transform: scale(1.04) rotate(1deg);
+}
+
+/* .Work_box{
+    position: absolute;
+    top: 20px;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    background: #2a2b2f;
+    border: 2px solid #1e1f23;
+    border-radius:15px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+
+} */
+    
 .Work_img{
     margin: 10px;
     width:400px;
@@ -81,6 +116,7 @@ color: white;
 .Work_view_btn:hover{
     background-color: black;
     color: white;
+    box-shadow: 0 0 10px rgba(244, 25, 178, 0.8), 0 0 20px rgba(244, 25, 178, 0.8), 0 0 30px rgba(244, 25, 178, 0.8);
 }
 .Work_tag{
     /* background-color: black; */
@@ -91,8 +127,17 @@ color: white;
 }
 .Work_tag_name{
     font-size: 3rem;
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px rgb(238, 250, 58), 0 0 20px rgb(238, 250, 58), 0 0 25px rgb(238, 250, 58), 0 0 30px rgb(238, 250, 58), 0 0 35px rgb(238, 250, 58);
-    text-shadow: rgb(188, 19, 254) 2px 0px 0px, rgb(188, 19, 254) -2px 0px 0px, rgb(188, 19, 254) 0px 2px 0px, rgb(188, 19, 254) 0px -2px 0px, rgb(188, 19, 254) 1px 1px, rgb(188, 19, 254) -1px -1px 0px, rgb(188, 19, 254) 1px -1px 0px, rgb(188, 19, 254) -1px 1px 0px, rgb(188, 19, 254) 0px 0px 7px, rgb(188, 19, 254) 0px 0px 10px, rgb(188, 19, 254) 0px 0px 21px;
+    text-shadow: rgb(188, 19, 254) 2px 0px 0px,
+    rgb(188, 19, 254) -2px 0px 0px,
+    rgb(188, 19, 254) 0px 2px 0px,
+    rgb(188, 19, 254) 0px -2px 0px,
+    rgb(188, 19, 254) 1px 1px,
+    rgb(188, 19, 254) -1px -1px 0px,
+    rgb(188, 19, 254) 1px -1px 0px,
+    rgb(188, 19, 254) -1px 1px 0px,
+    rgb(188, 19, 254) 0px 0px 7px,
+    rgb(188, 19, 254) 0px 0px 10px,
+    rgb(188, 19, 254) 0px 0px 21px;
     color: black;
 
 }
@@ -135,6 +180,7 @@ color: white;
         align-self:center;
         color: black;
         border-radius:10px ;
+        box-shadow: 0 0 5px #f419b2, 0 0 15px #f419b2, 0 0 15px #f419b2, 0 0 6px #f419b2;
         /* box-shadow: rgb(188, 19, 254) 2px 0px 0px, rgb(188, 19, 254) -2px 0px 0px, rgb(188, 19, 254) 0px 2px 0px, rgb(188, 19, 254) 0px -2px 0px, rgb(188, 19, 254) 1px 1px, rgb(188, 19, 254) -1px -1px 0px, rgb(188, 19, 254) 1px -1px 0px, rgb(188, 19, 254) -1px 1px 0px, rgb(188, 19, 254) 0px 0px 7px, rgb(188, 19, 254) 0px 0px 10px, rgb(188, 19, 254) 0px 0px 21px; */
         /* text-shadow: 0 0 5px #fff, 0 0 10px #
         fff, 0 0 15px rgb(238, 250, 58), 0 0 20px rgb(238, 250, 58), 0 0 25px rgb(238, 250, 58), 0 0 30px rgb(238, 250, 58), 0 0 35px rgb(238, 250, 58); */
@@ -155,14 +201,14 @@ color: white;
         color: black;
         font-size: 15px;
         text-shadow:
-          0 0 7px #fff,
-          0 0 10px #fff,
-          0 0 21px #fff,
-          0 0 42px #0fa,
-          0 0 82px #0fa,
-          0 0 92px #0fa,
-          0 0 102px #0fa,
-          0 0 151px #0fa;
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px #0fa,
+        0 0 82px #0fa,
+        0 0 92px #0fa,
+        0 0 102px #0fa,
+        0 0 151px #0fa;
         z-index: 2;
     }
     .Work_tag{
@@ -174,8 +220,17 @@ color: white;
     }
     .Work_tag_name{
         font-size: 2rem;
-        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px rgb(238, 250, 58), 0 0 20px rgb(238, 250, 58), 0 0 25px rgb(238, 250, 58), 0 0 30px rgb(238, 250, 58), 0 0 35px rgb(238, 250, 58);
-        text-shadow: rgb(188, 19, 254) 2px 0px 0px, rgb(188, 19, 254) -2px 0px 0px, rgb(188, 19, 254) 0px 2px 0px, rgb(188, 19, 254) 0px -2px 0px, rgb(188, 19, 254) 1px 1px, rgb(188, 19, 254) -1px -1px 0px, rgb(188, 19, 254) 1px -1px 0px, rgb(188, 19, 254) -1px 1px 0px, rgb(188, 19, 254) 0px 0px 7px, rgb(188, 19, 254) 0px 0px 10px, rgb(188, 19, 254) 0px 0px 21px;
+        text-shadow:  rgb(188, 19, 254) 2px 0px 0px,
+        rgb(188, 19, 254) -2px 0px 0px,
+        rgb(188, 19, 254) 0px 2px 0px,
+        rgb(188, 19, 254) 0px -2px 0px,
+        rgb(188, 19, 254) 1px 1px,
+        rgb(188, 19, 254) -1px -1px 0px,
+        rgb(188, 19, 254) 1px -1px 0px,
+        rgb(188, 19, 254) -1px 1px 0px,
+        rgb(188, 19, 254) 0px 0px 7px,
+        rgb(188, 19, 254) 0px 0px 10px,
+        rgb(188, 19, 254) 0px 0px 21px;
         color: black;
     
     }
