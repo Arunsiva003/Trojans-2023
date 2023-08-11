@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "react-icons": "^4.10.1",
     "remixicon": "^3.5.0"
   }
 }
