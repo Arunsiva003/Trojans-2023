@@ -72,18 +72,41 @@ function Workshop() {
       console.log(event)
       navigate('/eventdetail', { state: { eventname: event.eventname,
       duration:event.duration,
-    description:event.description,
-  coordinators:event.coordinators,
-timing:event.timing } });
+      description:event.description,
+      coordinators:event.coordinators,
+      timing:event.timing } });
     }
     return (
       <div>
-         <div className='Workshop_cont'>
+         <div className='Workshop_cont_back'>
             <div className='Workshop_title'>
               <h1 className='mobile-view'>{"< Workshop />"}</h1>
             </div>
             <h1 style={{margin:"10px"}}><span className='Work_tag'>{"<"}</span><span className='Work_tag_name'>{" div "}</span><span className='Work_tag'>{">"}</span></h1>
-            <div className='all-workshop'>
+            <div className="work_cont">
+              { workshopdata.map((event,index) =>(
+                <div className="work_card_container">
+                  <article className="work_card_article">
+                    <h1 style={{margin:"10px"}}><span className='Work_tag'>{"<"}</span><span className='Work_tag_name'>{" Img "}</span><span className='Work_tag'>{">"}</span></h1>
+                    <div class="card__scale-1"></div>
+                    <div class="card__scale-2"></div>
+
+                    <div className="work_shape-1">
+                      <div className="work_shape-2"></div>
+                      <div className="work_shape-3">
+                        <img className="Work_img" src={event.imageSrc} alt="Event" />
+                      </div>
+                    </div>
+                    <h2 className='Work_close Work_tag'>{"/>"}</h2>
+                    <div className="work_detail">
+                      <h2 className="work_name"> Name</h2>
+                      <h2 className='Work_view' onClick={()=>{sharedata(event)}}><span className='Work_tag'>{"< "}</span> <span className='Work_tag_name'>{"a "}</span><a className='Work_view_btn'>{event.buttonText}</a><span className='Work_tag'>{" />"}</span> </h2>
+                    </div>
+                  </article>
+                </div>
+              ))}
+            </div>
+            {/* <div className='all-workshop'>
               {workshopdata.map((event, index) => (
             
               <div className='Workshop_cards' key={index}>
@@ -93,8 +116,8 @@ timing:event.timing } });
                     <h2 className='Work_view' onClick={()=>{sharedata(event)}}><span className='Work_tag'>{"< "}</span> <span className='Work_tag_name'>{"a "}</span><a className='Work_view_btn'>{event.buttonText}</a><span className='Work_tag'>{" />"}</span> </h2>
                   
               </div>
-            ))}
-          </div>
+              ))}
+            </div> */}
           <h1 style={{margin:"10px"}}><span className='Work_tag'>{"<"}</span><span className='Work_tag_name'>{" /div "}</span><span className='Work_tag'>{">"}</span></h1>
         </div>
       </div>

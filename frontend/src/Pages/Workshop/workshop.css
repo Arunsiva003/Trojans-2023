@@ -1,215 +1,47 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
-:root{
+:root {
     --white-color: #fff;
-    --black-color: hsl(210,12%,15%);
-    --body-color:hsl(210,24%,8%);
-    --container-color:hsl(210,24%,8%);
+    --black-color: hsl(210, 12%, 15%);
+    --body-color: hsl(210, 24%, 8%);
+    --container-color: hsl(210, 24%, 8%);
 
 
-    --body-font: "Poppins",sans-serif;
+    --body-font: "Poppins", sans-serif;
 
-    --h2-font-size : 1.25rem;
+    --h2-font-size: 1.25rem;
     --normal-font-size: .938rem;
 }
 
 
-@media  and ( min-width : 1024px) {
+@media screen and (max-width : 1024px) {
 
-:root{
-    --h2-font-size: 1.5rem;
-    --normal-font-size :1rem;
-}
-    
+    :root {
+        --h2-font-size: 1.5rem;
+        --normal-font-size: 1rem;
+    }
+
 }
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     /* color: white; */
 }
-.Workshop_cont{
+
+.Workshop_cont_back {
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
     background: var(--body-color);
 
 }
 
-.Workshop_title{
+.Workshop_title {
     align-self: center;
     color: #232427;
     font-size: 30px;
     text-shadow:
-      0 0 7px #fff,
-      0 0 10px #fff,
-      0 0 21px #fff,
-      0 0 42px #0fa,
-      0 0 82px #0fa,
-      0 0 92px #0fa,
-      0 0 102px #0fa,
-      0 0 151px #0fa;
-    z-index: 2;
-}
-.Workshop_cards{ 
-    background-color:#000;
-    width: fit-content; 
-    display: flex; 
-    justify-content: center;
-    align-items: start ; 
-    flex-direction: column; 
-    margin: 20px; 
-    border-radius:15px ;
-    transition: all 0.2s;
-    background: rgba(255,255,255,.05);
-    box-shadow: 0 0 10px rgba(0,0,0,0.25);
-    backdrop-filter: blur(10px);
-
-    /* -webkit-border-radius:10px ;
-    -moz-border-radius:10px ; 
-    -ms-border-radius:10px ;
-    -o-border-radius:10px ; */
-    /* box-shadow: 0 0 5px #31afaf, 0 0 15px #31afaf, 0 0 15px #31afaf, 0 0 6px #31afaf; */
-    margin-inline: 30px;
-}
-.Workshop_cards:hover{
-    transform: scale(1.04) rotate(1deg);
-}
-
-
-.Work_img{
-    margin: 10px;
-    width:400px;
-    height: 400px;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-}
-.all-workshop{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    width: fit-content;
-    align-items: center;
-    justify-content:center;
-    /* background-color:aliceblue; */
-    gap: 0;
-    
-}
-.Work_view{
-    align-self:center;
-    position: relative;
-    top: -20px;
-    margin: 20px;
-    
-}
-.Work_view_btn{
-    align-self:center;
-    color: rgb(255, 255, 255);
-    /* background-color: white; */
-    /* border: 2px solid red; */
-    border-radius:10px ;
-    box-shadow: 0 0 5px #f419b2, 0 0 15px #f419b2, 0 0 15px #f419b2, 0 0 6px #f419b2;
-    /* box-shadow: rgb(188, 19, 254) 2px 0px 0px, rgb(188, 19, 254) -2px 0px 0px, rgb(188, 19, 254) 0px 2px 0px, rgb(188, 19, 254) 0px -2px 0px, rgb(188, 19, 254) 1px 1px, rgb(188, 19, 254) -1px -1px 0px, rgb(188, 19, 254) 1px -1px 0px, rgb(188, 19, 254) -1px 1px 0px, rgb(188, 19, 254) 0px 0px 7px, rgb(188, 19, 254) 0px 0px 10px, rgb(188, 19, 254) 0px 0px 21px; */
-    /* text-shadow: 0 0 5px #fff, 0 0 3px #fff, 0 0 5px rgb(238, 250, 58), 0 0 10px rgb(238, 250, 58), 0 0 3px rgb(238, 250, 58), 0 0 5px rgb(238, 250, 58), 0 0 5px rgb(238, 250, 58); */
-    /* box-shadow: 0 0 5px #fff, 0 0 1px #fff, 0 0 2px rgb(238, 250, 58), 0 0 2px rgb(238, 250, 58), 0 0 2px rgb(238, 250, 58), 0 0 3px rgb(238, 250, 58), 0 0 2px rgb(238, 250, 58); */
-    padding: 10px;
-    font-size:100%;
-    -webkit-border-radius:10px ;
-    -moz-border-radius:10px ;
-    -ms-border-radius:10px ;
-    -o-border-radius:10px ;
-}
-.Work_view_btn:hover{
-    background-color: black;
-    color: white;
-    box-shadow: 0 0 10px rgba(244, 25, 178, 0.8), 0 0 20px rgba(244, 25, 178, 0.8), 0 0 30px rgba(244, 25, 178, 0.8);
-}
-.Work_tag{
-    /* background-color: black; */
-    text-shadow: rgb(254, 65, 100) 0px 0px 5px, rgb(254, 65, 100) 0px 0px 5px, rgb(254, 65, 100) 0px 0px 15px;
-    
-    color: rgb(0, 0, 0);
-    font-size: 3rem;
-}
-.Work_tag_name{
-    font-size: 3rem;
-    text-shadow: rgb(188, 19, 254) 2px 0px 0px,
-    rgb(188, 19, 254) -2px 0px 0px,
-    rgb(188, 19, 254) 0px 2px 0px,
-    rgb(188, 19, 254) 0px -2px 0px,
-    rgb(188, 19, 254) 1px 1px,
-    rgb(188, 19, 254) -1px -1px 0px,
-    rgb(188, 19, 254) 1px -1px 0px,
-    rgb(188, 19, 254) -1px 1px 0px,
-    rgb(188, 19, 254) 0px 0px 7px,
-    rgb(188, 19, 254) 0px 0px 10px,
-    rgb(188, 19, 254) 0px 0px 21px;
-    color: black;
-
-}
-.Work_close{
-    margin: 10px;
-    font-size: 40px;
-}
-@media screen and (max-width:1024px) {
-    .Work_img{
-        margin: 10px;
-        width: 250px;
-        align-self: center;
-        height: 300px;
-    }
-    
-    /* .Event-Temp-Cont{
-        background-color:rgba(21, 20, 20,0.9);
-        /* background-color: red; */
-        /* display: flex;
-        justify-content:center; */
-        /* align-items: center; */
-        /* flex-direction: column;
-        padding: 10px;
-        color: white; */
-        
-        /* } */
-    .Work_view{
-        align-self:center;
-        position: relative;
-        top: -20px;
-        margin: 10px;
-        font-size: 20px;
-    }
-    /* .all-events{
-        align-self: center;
-        justify-self: center;
-    } */
-
-    .Work_view_btn{
-        align-self:center;
-        color: black;
-        border-radius:10px ;
-        box-shadow: 0 0 5px #f419b2, 0 0 15px #f419b2, 0 0 15px #f419b2, 0 0 6px #f419b2;
-        /* box-shadow: rgb(188, 19, 254) 2px 0px 0px, rgb(188, 19, 254) -2px 0px 0px, rgb(188, 19, 254) 0px 2px 0px, rgb(188, 19, 254) 0px -2px 0px, rgb(188, 19, 254) 1px 1px, rgb(188, 19, 254) -1px -1px 0px, rgb(188, 19, 254) 1px -1px 0px, rgb(188, 19, 254) -1px 1px 0px, rgb(188, 19, 254) 0px 0px 7px, rgb(188, 19, 254) 0px 0px 10px, rgb(188, 19, 254) 0px 0px 21px; */
-        /* text-shadow: 0 0 5px #fff, 0 0 10px #
-        fff, 0 0 15px rgb(238, 250, 58), 0 0 20px rgb(238, 250, 58), 0 0 25px rgb(238, 250, 58), 0 0 30px rgb(238, 250, 58), 0 0 35px rgb(238, 250, 58); */
-        /* box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px rgb(238, 250, 58), 0 0 20px rgb(238, 250, 58), 0 0 25px rgb(238, 250, 58), 0 0 30px rgb(238, 250, 58), 0 0 35px rgb(238, 250, 58); */
-        padding: 10px;
-        font-size:100%;
-        border: none;
-        -webkit-border-radius:10px ;
-        -moz-border-radius:10px ;
-        -ms-border-radius:10px ;
-        -o-border-radius:10px ;
-        margin: 20px;
-    
-        
-    }
-    .Workshop_title{
-        align-self: center;
-        color: black;
-        font-size: 15px;
-        text-shadow:
         0 0 7px #fff,
         0 0 10px #fff,
         0 0 21px #fff,
@@ -218,18 +50,149 @@
         0 0 92px #0fa,
         0 0 102px #0fa,
         0 0 151px #0fa;
-        z-index: 2;
-    }
-    .Work_tag{
-        /* background-color: black; */
-        text-shadow: rgb(254, 65, 100) 0px 0px 5px, rgb(254, 65, 100) 0px 0px 5px, rgb(254, 65, 100) 0px 0px 15px;
-        
-        color: rgb(0, 0, 0);
-        font-size: 2rem;
-    }
-    .Work_tag_name{
-        font-size: 2rem;
-        text-shadow:  rgb(188, 19, 254) 2px 0px 0px,
+    z-index: 2;
+}
+
+
+
+/* ================= Card =========== */
+
+.work_cont {
+    display: grid;
+    place-items: center;
+    margin-inline: 1.5rem;
+}
+
+.work_card_container,
+.work_card_article {
+    display: grid;
+    gap: 2rem;
+}
+
+.work_card_container {
+    padding-block: 4.5rem;
+}
+
+.work_card_article {
+    --hue-1: 210;
+    --hue-2: 238;
+    position: relative;
+    justify-items: center;
+    color: var(--white-color);
+    text-align: center;
+    padding: 4rem 2rem 3rem;
+    border: 4px solid transparent;
+    background: linear-gradient(var(--container-color),
+            var(--container-color)) padding-box,
+        linear-gradient(135deg,
+            hsl(var(--hue-1), 85%, 70%) 0%,
+            var(--container-color),
+            var(--container-color),
+            hsl(var(--hue-2), 70%, 55%) 100%) border-box;
+    border-radius: 1.25rem;
+    overflow: hidden;
+}
+.work_shape_1{
+    position: relative;
+    width: 148px;
+    border-radius: 2rem;
+    z-index: 2;
+    background: linear-gradient(140deg,
+            hsl(var(--hue-1), 75%, 25%) 3%,
+            hsl(var(--hue-2), 65%, 45%) 100%);
+    height: 148px;
+}
+.work_shape_2{
+    width: 116px;
+    border-radius: 1.5rem;
+    z-index: 2;
+    background: linear-gradient(140deg,
+            hsl(var(--hue-1), 70%, 50%) 3%,
+            hsl(var(--hue-2), 95%, 45%) 100%);
+    height: 116px;
+}
+.work_shape_3{
+    width: 76px;
+    border-radius: 1rem;
+    z-index: 2;
+    background: linear-gradient(140deg,
+            hsl(var(--hue-1), 85%, 69%) 3%,
+            hsl(var(--hue-2), 85%, 60%) 100%);
+    height: 76px;
+    display:grid;
+    place-items: center;
+}
+.work_shape_2,
+.work_shape_3{
+    position: absolute;
+    inset: 0;
+    margin: auto;
+}
+.work_detail{
+    z-index: 3;
+}
+.work_name{
+    font-size: var(--h2-font-size);
+    margin-bottom:.25rem;
+    font-weight: 600;
+}
+
+/* .Work_img{
+    font-size: 3rem;
+} */
+
+
+
+
+.Work_img {
+    margin: 10px;
+    width: 400px;
+    height: 400px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+
+
+.Work_view {
+    align-self: center;
+    position: relative;
+    top: -20px;
+    margin: 20px;
+}
+
+.Work_view_btn {
+    display: inline-block;
+    background: var(--white-color);
+    padding: 1rem 1.5rem;
+    border-radius:.5rem;
+    color: var(--black-color);
+    font-weight: 500;
+}
+
+
+
+
+.Work_view_btn:hover {
+    background-color: black;
+    color: white;
+    box-shadow: 0 0 10px rgba(244, 25, 178, 0.8), 0 0 20px rgba(244, 25, 178, 0.8), 0 0 30px rgba(244, 25, 178, 0.8);
+}
+
+.Work_tag {
+    /* background-color: black; */
+    text-shadow: rgb(254, 65, 100) 0px 0px 5px, rgb(254, 65, 100) 0px 0px 5px, rgb(254, 65, 100) 0px 0px 15px;
+
+    color: rgb(0, 0, 0);
+    font-size: 3rem;
+}
+
+.Work_tag_name {
+    font-size: 3rem;
+    text-shadow: rgb(188, 19, 254) 2px 0px 0px,
         rgb(188, 19, 254) -2px 0px 0px,
         rgb(188, 19, 254) 0px 2px 0px,
         rgb(188, 19, 254) 0px -2px 0px,
@@ -240,10 +203,110 @@
         rgb(188, 19, 254) 0px 0px 7px,
         rgb(188, 19, 254) 0px 0px 10px,
         rgb(188, 19, 254) 0px 0px 21px;
-        color: black;
-    
+    color: black;
+
+}
+
+.Work_close {
+    margin: 10px;
+    font-size: 40px;
+}
+
+@media screen and (max-width:1024px) {
+    .Work_img {
+        margin: 10px;
+        width: 250px;
+        align-self: center;
+        height: 300px;
     }
-    .Work_close{
+
+    /* .Event-Temp-Cont{
+        background-color:rgba(21, 20, 20,0.9);
+        /* background-color: red; */
+    /* display: flex;
+        justify-content:center; */
+    /* align-items: center; */
+    /* flex-direction: column;
+        padding: 10px;
+        color: white; */
+
+    /* } */
+    .Work_view {
+        align-self: center;
+        position: relative;
+        top: -20px;
+        margin: 10px;
+        font-size: 20px;
+    }
+
+    /* .all-events{
+        align-self: center;
+        justify-self: center;
+    } */
+
+    .Work_view_btn {
+        align-self: center;
+        color: black;
+        border-radius: 10px;
+        box-shadow: 0 0 5px #f419b2, 0 0 15px #f419b2, 0 0 15px #f419b2, 0 0 6px #f419b2;
+        /* box-shadow: rgb(188, 19, 254) 2px 0px 0px, rgb(188, 19, 254) -2px 0px 0px, rgb(188, 19, 254) 0px 2px 0px, rgb(188, 19, 254) 0px -2px 0px, rgb(188, 19, 254) 1px 1px, rgb(188, 19, 254) -1px -1px 0px, rgb(188, 19, 254) 1px -1px 0px, rgb(188, 19, 254) -1px 1px 0px, rgb(188, 19, 254) 0px 0px 7px, rgb(188, 19, 254) 0px 0px 10px, rgb(188, 19, 254) 0px 0px 21px; */
+        /* text-shadow: 0 0 5px #fff, 0 0 10px #
+        fff, 0 0 15px rgb(238, 250, 58), 0 0 20px rgb(238, 250, 58), 0 0 25px rgb(238, 250, 58), 0 0 30px rgb(238, 250, 58), 0 0 35px rgb(238, 250, 58); */
+        /* box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px rgb(238, 250, 58), 0 0 20px rgb(238, 250, 58), 0 0 25px rgb(238, 250, 58), 0 0 30px rgb(238, 250, 58), 0 0 35px rgb(238, 250, 58); */
+        padding: 10px;
+        font-size: 100%;
+        border: none;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        margin: 20px;
+
+
+    }
+
+    .Workshop_title {
+        align-self: center;
+        color: black;
+        font-size: 15px;
+        text-shadow:
+            0 0 7px #fff,
+            0 0 10px #fff,
+            0 0 21px #fff,
+            0 0 42px #0fa,
+            0 0 82px #0fa,
+            0 0 92px #0fa,
+            0 0 102px #0fa,
+            0 0 151px #0fa;
+        z-index: 2;
+    }
+
+    .Work_tag {
+        /* background-color: black; */
+        text-shadow: rgb(254, 65, 100) 0px 0px 5px, rgb(254, 65, 100) 0px 0px 5px, rgb(254, 65, 100) 0px 0px 15px;
+
+        color: rgb(0, 0, 0);
+        font-size: 2rem;
+    }
+
+    .Work_tag_name {
+        font-size: 2rem;
+        text-shadow: rgb(188, 19, 254) 2px 0px 0px,
+            rgb(188, 19, 254) -2px 0px 0px,
+            rgb(188, 19, 254) 0px 2px 0px,
+            rgb(188, 19, 254) 0px -2px 0px,
+            rgb(188, 19, 254) 1px 1px,
+            rgb(188, 19, 254) -1px -1px 0px,
+            rgb(188, 19, 254) 1px -1px 0px,
+            rgb(188, 19, 254) -1px 1px 0px,
+            rgb(188, 19, 254) 0px 0px 7px,
+            rgb(188, 19, 254) 0px 0px 10px,
+            rgb(188, 19, 254) 0px 0px 21px;
+        color: black;
+
+    }
+
+    .Work_close {
         margin: 10px;
         font-size: 20px;
     }
