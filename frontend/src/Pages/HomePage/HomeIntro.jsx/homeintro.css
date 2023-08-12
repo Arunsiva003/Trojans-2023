@@ -10,6 +10,7 @@
   
   .heroPTag {
     position: relative;
+    top: 20px;
     font-size: 4vw;
     color: #fff;
   }

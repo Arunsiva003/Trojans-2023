@@ -32,50 +32,7 @@ export default function Cards(){
                  
                 </div>
             </div>
-            <div className="card-box">
-                <img src={cards} alt="" />
 
-                <div className="card-layer">
-                <h4>Sponsor name</h4>
-                    <p>Sponsor details</p>
-                    
-                </div>
-            </div>
-            <div className="card-box">
-                <img src={cards} alt="" />
-
-                <div className="card-layer">
-                <h4>Sponsor name</h4>
-                    <p>Sponsor details</p>
-                    
-                </div>
-            </div>
-            <div className="card-box">
-                <img src={cards}  alt=""/>
-
-                <div className="card-layer">
-                <h4>Sponsor name</h4>
-                    <p>Sponsor details</p>
-                   
-                </div>
-            </div>
-            <div className="card-box">
-                <img src={cards}  alt=""/>
-
-                <div className="card-layer">
-                <h4>Sponsor name</h4>
-                    <p>Sponsor details</p>
-                   
-                </div>
-            </div>
-            <div className="card-box">
-                <img src={cards}  alt=""/>
-
-                <div className="card-layer">
-                <h4>Sponsor name</h4>
-                    <p>Sponsor details</p>
-                </div>
-            </div>
         </div>
     </section>
     </>

@@ -14,28 +14,48 @@ export default function Contactus(){
 
     const changehandler = (event) =>{
         setformstate({...formstate , [event.target.name] : event.target.value});
-    }
+    };
+
+   
+
+    const submit_handler = (event) => {
+        event.preventDefault();
+        const config= {
+            Username : "mail",
+            Password : "pass",
+            Host : "name",
+            Port : 3000,
+            To : "trojans@citchennai.net",
+            From : formstate.email,
+            Subject : "This is the subject",
+            Body : `${formstate.name} get connected with us on trojans`,   
+            SecureToken : "token update with username and password",
+        };
+
+        if(window.Email){
+            window.Email.send(config).then(() => alert("Thanks for reaching out will get contact with u soon"));
+        }
+    };
 
     return(
         <>
         <div className = "main">
-            <div className="heading">
-                <h1 className = "h1_head">Contact Us</h1>
+            <div className="left-div_contact">
+                <div className="heading">
+                    <h1 className = "h1_head">Contact Us</h1>
+                </div>
+                <p> Get Contact with us to get the unreal form of enjoyment and entertainment</p>
+                
             </div>
-            <p> Get Contact with us to get the unreal form of enjoyment and entertainment</p>
-            <section>
             <div className="register">
-            <div className="col-1">
-                <form id='form' className="flex flex-col">
-                    <input type="text" onChange={changehandler} placeholder="Your Name"/>
-                    <input type="text"   onChange={changehandler}placeholder="Email ID"/>
-                    <input type="text"   onChange={changehandler} placeholder="Phone No"/>
-                    <button className="btn"  onChange={changehandler}>Submit</button>
-                </form>
+                        <form  className="form_contactus" onSubmit={submit_handler}>
+                            <input type="text" onChange={changehandler} value= {formstate.name || ""} placeholder="Your Name"/>
+                            <input type="text" onChange={changehandler} value= {formstate.email || ""} placeholder="Email ID"/>
+                            <input type="text" onChange={changehandler} value= {formstate.phone || ""} placeholder="Phone No"/>
+                            <button className="btn"  onChange={changehandler}>Submit</button>
+                        </form>
             </div>
-    
-            </div>
-            </section>
+
         </div>
         </>
     )

@@ -17,7 +17,6 @@ export default function Sponsors(){
             <Cards/>    
             </div>
         </div>
-        <Footer/>
         </div>
         </>
     )
