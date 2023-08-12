@@ -5,7 +5,7 @@ import "./detailevent.css";
 function DetailEvent() {
   const location = useLocation();
   const { state } = location;
-
+console.log(state)
   // Split the description into an array of points
   const descriptionPoints = state.description.split('\n').filter(point => point.trim() !== '');
 

@@ -17,7 +17,7 @@ function Home() {
       <Hero/>
       <EventHome/>
       <ContactUs/>
-      <Footer/>
+      {/* <Footer/> */}
     </div>
     </>
   )

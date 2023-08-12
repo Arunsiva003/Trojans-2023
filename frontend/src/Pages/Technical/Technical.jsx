@@ -69,7 +69,6 @@ function Technical() {
      
     ];
     const sharedata=(event)=>{
-      console.log(event)
       navigate('/eventdetail', { state: { eventname: event.eventname,
       duration:event.duration,
     description:event.description,
